@@ -1,0 +1,41 @@
+@import "../../assets/global-styles/global-styles";
+
+#month-view {
+    .days-of-week-section {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            height: 3rem;
+            width: calc(100% / 7);
+            border: $primary solid 1px;
+            line-height: 3rem;
+            text-align: center;
+        }
+    }
+
+    .days-section {
+        display: flex;
+
+        ul {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+
+            li {
+                border: $primary solid 1px;
+                line-height: 3rem;
+                text-align: center;
+
+                button {
+                    width: 100%;
+                    line-height: 3rem;
+                }
+            }
+
+            li.today {
+                background: $primary-light;
+            }
+        }
+    }
+}

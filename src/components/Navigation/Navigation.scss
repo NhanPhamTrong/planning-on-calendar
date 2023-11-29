@@ -1,0 +1,24 @@
+@import "../../assets/global-styles/global-styles";
+
+#navigation {
+    background: $primary;
+    color: $on-primary;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background: $primary;
+        color: $on-primary;
+        width: 15%;
+        padding: 1rem 0.5rem;
+    }
+
+    button:hover {
+        background: $primary-variant;
+    }
+
+    .change-view-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../assets/global-styles/global-styles";
+
+#modal {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .modal-background {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .modal-content {
+        padding: 2rem;
+        background: $surface;
+        border-radius: 1rem;
+        color: $on-surface;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

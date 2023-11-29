@@ -1,0 +1,20 @@
+@import "../../assets/global-styles/global-styles";
+
+#year-view {
+    ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        
+        li {
+            border: $primary solid 1px;
+            line-height: 5rem;
+            text-align: center;
+
+            button {
+                width: 100%;
+                line-height: 5rem;
+            }
+        }
+    }
+}
